@@ -1,0 +1,15 @@
+<form action="" method="post" onsubmit="return false">
+    masukan panjang persegi <input type="text" name="" id="panjang">
+    masukan lembar persegi <input type="text" name="" id="lebar">
+    <button onclick="hitung()">hitung luas </button>
+    <p id="hasil"></p>
+ </form>
+ 
+ <script>
+     function hitung() {
+         let panjang = document.getElementById('panjang').value
+         let lebar = document.getElementById('lebar').value
+         let luas = panjang * lebar
+         document.getElementById('hasil').innerHTML = luas
+         }
+ </script>
